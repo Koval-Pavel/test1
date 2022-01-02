@@ -11,10 +11,6 @@ import java.io.IOException;
 
 import static org.example.Group.allStudents;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main( String[] args ) throws ParserConfigurationException, SAXException, IOException {
@@ -25,6 +21,7 @@ public class App
         parser.parse(new File("src/main/resources/group.xml"), handler);
 
         System.out.println(allStudents.get(0).getFirstName());
+        System.out.println("-----------------");
         System.out.println("-----------------");
     }
 }
